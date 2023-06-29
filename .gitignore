@@ -15,3 +15,6 @@ dist
 
 # Test reports
 reports
+
+# Mac files
+.DS_Store
