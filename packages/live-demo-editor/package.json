@@ -1,0 +1,67 @@
+{
+  "name": "@complex-components/live-demo-editor",
+  "version": "0.0.1",
+  "description": "A live editable code-editor which can be used for hosting demos",
+  "homepage": "https://github.com/raghavan-dev/complex-components#readme",
+  "bugs": {
+    "url": "https://github.com/raghavan-dev/complex-components/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghavan-dev/complex-components.git",
+    "directory": "packages/demo-editor"
+  },
+  "license": "MIT",
+  "author": "raghavan-dev",
+  "module": "dist/index.js",
+  "types": "dist/types",
+  "files": [
+    "dist"
+  ],
+  "packageManager": "yarn@3.5.1",
+  "scripts": {
+    "build": "yarn clean && rollup --config",
+    "clean": "rimraf dist",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "peerDependencies": {
+    "@types/react": "^17.0.0 || ^18.0.0",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "^17.0.0 || ^18.0.0"
+  },
+  "dependencies": {
+    "prismjs": "^1.29.0",
+    "prop-types": "^15.8.1",
+    "react-runner": "^1.0.3",
+    "react-simple-code-editor": "^0.13.1",
+    "styled-components": "^6.0.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-react": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@storybook/addon-essentials": "^7.0.24",
+    "@storybook/addon-interactions": "^7.0.24",
+    "@storybook/addon-links": "^7.0.24",
+    "@storybook/blocks": "^7.0.24",
+    "@storybook/react": "^7.0.24",
+    "@storybook/react-webpack5": "^7.0.24",
+    "@storybook/testing-library": "^0.0.14-next.2",
+    "@types/prismjs": "^1.26.0",
+    "@types/styled-components": "^5.1.26",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.25.3",
+    "rollup-plugin-import-css": "^3.3.1",
+    "storybook": "^7.0.24",
+    "typescript": "^5.1.5"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  }
+}

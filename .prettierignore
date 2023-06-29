@@ -1,0 +1,3 @@
+# Ignore dirs/files we do not want to prettify
+node_modules
+packages/**/node_modules
